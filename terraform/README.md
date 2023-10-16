@@ -1,3 +1,7 @@
+## 概要
+本コードはterraformを用いてS3、CloudFront、Route53、CertificateManagerを用いたウェブサイトホスティングを構築するものです。
+注意としてRoute53でドメイン購入済みであることが必須となっています。
+
 ## 前準備
 1．enviromentディレクトリにAWSのアクセスキーおよびシークレットキーを記入するファイル(variable.tfvars)が2つあるので記入してください。またterraformのバージョンの違いで動かないことがあり得ますので注意。\
 2．modulesディレクトリに「CretificateManagerとRoute53」、「CloudFront」、「S3バケット」を作成するディクトリ・ファイルがあります。それぞれvariable.tfファイルに適切な変数を代入してください。\
